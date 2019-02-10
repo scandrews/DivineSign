@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DevineSign</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-toggleable-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar collapses to button on small screen -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <a class="navbar-brand" href="#">DivineSign</a>
+                </ul>
+                <!-- log in glyphicon and link in navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li class="active"><a href="/sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                </ul>
+            </div>
+    </nav>
+    <!-- end navbar -->
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img class="zodiac" src="./images/zodiac_sign_round.png"> </img>
+                    </div>    
+                   <div class="col-md-4" id="loginContainer">
+                    <div class="form-wrap">
+                        <h1>Create an account</h1>
+                        <form role="form" action="/sign-up" method="post" id="login-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="sr-only">Username</label>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Pick a username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Create a password">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="sign_1" class="sr-only">Your Sun Sign</label>
+                                <select class="form-control" placeholder="Your Sun Sign" id="sign_1" name="sign_1">
+                                    <option>Sun Sign</option>
+                                    <option>aries</option>
+                                    <option>taurus</option>
+                                    <option>gemini</option>
+                                    <option>cancer</option>
+                                    <option>leo</option>
+                                    <option>virgo</option>
+                                    <option>libra</option>
+                                    <option>scorpio</option>
+                                    <option>sagittarius</option>
+                                    <option>capricorn</option>
+                                    <option>aquarius</option>
+                                    <option>pisces</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="sign_1" class="sr-only">Your Sun Sign</label>
+                                <select class="form-control" placeholder="Your Sun Sign" id="sign_2" name="sign_2">
+                                    <option>Sun Sign</option>
+                                    <option>aries</option>
+                                    <option>taurus</option>
+                                    <option>gemini</option>
+                                    <option>cancer</option>
+                                    <option>leo</option>
+                                    <option>virgo</option>
+                                    <option>libra</option>
+                                    <option>scorpio</option>
+                                    <option>sagittarius</option>
+                                    <option>capricorn</option>
+                                    <option>aquarius</option>
+                                    <option>pisces</option>
+                                </select>
+                            </div>
+                            <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign Up">
+                        </form>
+                        <a href="/login.html" class="forget" data-toggle="modal" data-target=".forget-modal">Already Have an Account? Go to Log-In</a>
+                        <hr>
+                    </div>
+                </div>
+                <!-- /.col-xs-12 -->
+            </div>
+            <!-- /.row -->
+    </div>
+    <!-- /.container -->
+   
+  
+</body>
+
+</html>

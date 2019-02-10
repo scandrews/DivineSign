@@ -1,0 +1,196 @@
+/*
+TABLE OF CONTENTS
+----------------
+I. FONTS
+II. HTML BODY and react app
+III. HEADERS
+IV. p and div classes 
+V. TEXT AND BUTTONS
+VI. SPECIAL OBJECTS 
+*/
+
+
+
+/*SECTION I*/
+.heading-font {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.body-font {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+.alt-font {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.aboutPoint{
+  color: black;
+}
+.list-group{
+  color:black;
+}
+.noResults{
+  color:black;
+}
+
+/*SECTION II*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #C0C0C0;
+  background: #000066; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(black, blue, white);
+  background-attachment: fixed;
+
+}
+.app{
+  color: #C0C0C0;
+  background: #000066; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(black, blue, white);
+  background-attachment: fixed;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #fdcc52;
+}
+a:hover,
+a:focus {
+  color: #fcbd20;
+}
+
+/*SECTION III*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.jumbotron{
+  background:  black;
+}
+
+/*SECTION IV*/
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/*SECTION V*/
+.text-primary {
+  color: #fdcc52;
+}
+
+.btn-outline {
+  color: white;
+  border-color: white;
+  border: 1px solid;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: white;
+  background-color: #5fc536;
+  border-color: #5fc536;
+}
+.btn {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 300px;
+  color: black;
+  background-color: 
+}
+.btn-submit{
+  color: black;
+  background-color: white;
+}
+.resultsPanel{
+  color: black;
+}
+.maleForm{
+  float: left;
+}
+.femaleForm{
+  float: right;
+}
+.reactBtn{
+  color: black;
+}
+.DivyaDiv{
+  float: center;
+}
+.panel-body{
+  float:left;
+}
+.maleForm{
+  float:left;
+}
+.femaleform{
+  float: right;
+}
+
+/*SECTION VI*/
+#loginContainer{
+	float: right;
+}
+.starSignIcon{
+	height: 150px;
+	width: 150px;
+}
+.zodiac {
+    height: 450px;
+  width: 450px;
+  margin-left: 180px;
+      position: absolute;
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+#login-form{
+  float: right;
+}
+.btn-login{
+  background-color: green;
+}
+#forgotpassword{
+  padding-left: 0;
+}
+#loginheader{
+  padding-left: 200px;
+}
+#button {
+  margin-top: 10px;
+}
+#matchbutton {
+  margin-top: 300px;
+}
+#seachpanelbody{
+  padding-top: 0px;
+}
+/*.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}*/
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
